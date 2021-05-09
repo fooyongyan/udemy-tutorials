@@ -1,0 +1,25 @@
+{
+  "name": "blockchain-tutorial-using",
+  "version": "1.0.0",
+  "description": "My Blockchain Development Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./dev/test.js",
+    "start": "node ./dev/networkNode.js",
+    "node-1": "nodemon --watch dev -e js ./dev/networkNode.js 3001 http://localhost:3001",
+    "node-2": "nodemon --watch dev -e js ./dev/networkNode.js 3002 http://localhost:3002",
+    "node-3": "nodemon --watch dev -e js ./dev/networkNode.js 3003 http://localhost:3003",
+    "node-4": "nodemon --watch dev -e js ./dev/networkNode.js 3004 http://localhost:3004",
+    "node-5": "nodemon --watch dev -e js ./dev/networkNode.js 3005 http://localhost:3005"
+  },
+  "author": "Foo Yong Yan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "sha256": "^0.2.0",
+    "uuid": "^8.3.2"
+  }
+}
